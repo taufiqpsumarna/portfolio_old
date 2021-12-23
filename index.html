@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Dopefolio</title>
+    <title>Portfolio | M Taufiq Permana Sumarna</title>
     <meta name="description" content="Portfolio Template for Developer" />
 
     <link rel="stylesheet" href="css/style.css" />
@@ -15,6 +15,23 @@
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
       rel="stylesheet"
     />
+<!--Script Mengucapkan Salam-->
+    <script>
+      const time = new Date().getHours();
+      let salam;
+      if (time < 11) {
+        salam = "Selamat Pagi, Awali Harimu Dengan Semangat !";
+      } else if (time < 15) {
+        salam = "Selamat Siang, Semoga Rencanamu Berjalan Dengan Baik !";
+      } else if (time < 18) {
+        salam = "Selamat Sore, Terimakasih Atas Kerja Kerasmu Hari Ini !";
+      }
+      else {
+        salam = "Selamat Malam";
+      }
+      document.getElementById("Salam").innerHTML = salam;
+      </script>
+
   </head>
   <body>
     <header class="header">
@@ -22,12 +39,12 @@
         <div class="header__logo-container">
           <div class="header__logo-img-cont">
             <img
-              src="./assets/png/john-doe.png"
-              alt="Ram Maheshwari Logo Image"
+              src="./assets/png/taufiq.png"
+              alt="Logo Image"
               class="header__logo-img"
             />
           </div>
-          <span class="header__logo-sub">John Doe</span>
+          <span class="header__logo-sub">M Taufiq Permana Sumarna</span>
         </div>
         <div class="header__main">
           <ul class="header__links">
@@ -37,6 +54,14 @@
             <li class="header__link-wrapper">
               <a href="./index.html#about" class="header__link">About </a>
             </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#work" class="header__link">
+                Working
+              </a>
+              <li class="header__link-wrapper">
+                <a href="./index.html#edu" class="header__link">
+                Education
+                </a>
             <li class="header__link-wrapper">
               <a href="./index.html#projects" class="header__link">
                 Projects
@@ -84,16 +109,21 @@
     </header>
     <section class="home-hero">
       <div class="home-hero__content">
-        <h1 class="heading-primary">Hey, My name is John Doe</h1>
+        <h1 class="heading-primary">
+          <p id="Salam">
+            <script>
+            document.getElementById("Salam").innerHTML = salam;
+          </script>
+            </p>
+          </h1>
         <div class="home-hero__info">
           <p class="text-primary">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-            tempora explicabo quae quod deserunt eius sapiente solutions for
-            complex problems
+            Selamat datang di halaman portofolio <strong>M Taufiq Permana Sumarna</strong>
+            scroll kebawah untuk mengetahui lebih dalam tentang saya dan daftar project yang pernah saya lakukan.
           </p>
         </div>
         <div class="home-hero__cta">
-          <a href="./#projects" class="btn btn--bg">Projects</a>
+          <a href="./index.html#projects" class="btn btn--bg">Projects</a>
         </div>
       </div>
       <div class="home-hero__socials">
@@ -155,30 +185,30 @@
         <h2 class="heading heading-sec heading-sec__mb-med">
           <span class="heading-sec__main">About Me</span>
           <span class="heading-sec__sub">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-            tempora explicabo quae quod deserunt eius sapiente
+            <B>Tak Kenal Maka Tak Sayang</B> Tapi Kalau Sudah Kenal Tapi Nggak Sayang-Sayang, Itu Gimana?
           </span>
         </h2>
         <div class="about__content">
           <div class="about__content-main">
-            <h3 class="about__content-title">Get to know me!</h3>
+            <h3 class="about__content-title">Kepoin Tentang Saya Yuk!</h3>
             <div class="about__content-details">
               <p class="about__content-details-para">
-                Hey! It's
-                <strong>John Doe</strong>
-                and I'm a <strong> Frontend Web Developer </strong> located in
-                Los Angeles. I've done
-                <strong> remote </strong>
-                projects for agencies, consulted for startups, and collaborated
-                with talented people to create
-                <strong>digital products </strong>
-                for both business and consumer use.
+                Hey! Perkenalkan Saya
+                <strong>Taufiq</strong>
+                Saya seorang <strong> IT Support & Network Engineer </strong> di PT. Unicorn Tosan Perkasa
+                Yang Bertempat Di Kota Bandung.
               </p>
               <p class="about__content-details-para">
-                I'm a bit of a digital product junky. Over the years, I've used
-                hundreds of web and mobile apps in different industries and
-                verticals. Feel free to
-                <strong>contact</strong> me here.
+                Saat ini saya juga berstatus sebagai mahasiswa aktif yang mengambil kelas karyawan di STMIK AMIK BANDUNG dengan
+                mengambil program studi S1 Teknik Informatika.
+              </p>
+              <p class="about__content-details-para">
+                Saya memiliki rasa ingin tahu dengan minat belajar yang tinggi, pantang menyerah dan mampu beradaptasi dengan cepat.
+                Saat ini saya sedang mempelajari lebih dalam tentang Computer Networking, Cyber Security, Cloud Computing, DevOps Dan VPS.
+                <br>
+              </p>
+              <p class="about__content-details-para">
+                Motto utama saya dalam bekerja adalah <b>"Work To Learn Not To Earn"</b>
               </p>
             </div>
             <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr"
@@ -205,13 +235,56 @@
         </div>
       </div>
     </section>
+    <section id="work" class="about sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main">Working Experience</span>
+          <span class="heading-sec__sub">
+            Saat bekerja anggaplah kita itu sedang <B>belajar</B> dan diakhir kelas kita dibayar.
+          </span>
+        </h2>
+        <div>
+             <p class="about__content-details-para1">
+               <strong>PT. Unicorn Tosan Perkasa - IT Support</strong> | Sep 2019 - Saat ini<br>
+               Bertugas untuk membantu user dalam menggunakan sumber daya IT perusahaan, training user, implementasi Teknologi IT baru, Manajeman aset IT, Manajemen Hosting Website dan Memastikan keamanan teknologi informasi di dalam perusahaan dan memiliki kewajiban utama dalam instalasi, troubleshooting, monitoring serta evaluasi terhadap kinerja sistem komputer di perusahaan maupun site project.
+             <br>
+              <p class="about__content-details-para1">
+              <strong>Freelance - Network Engineer</strong> | Mei 2019 - Agu 2019 · 4 bln<br>
+              Melakukan instalasi hardware, sistem atau software yang digunakan dalam jaringan. Melakukan instalasi, konfigurasi, dan perawatan layanan jaringan (network services) dan perangkat jaringan. Mendukung fungsi administratif (dokumentasi) pada penggunaan perangkat jaringan.
+            </p>
+            <br>
+             <p class="about__content-details-para1">
+               <strong>CV. Lintas Opsi Gradasi Informatika - Junior Network Engineer</strong> | Jan 2017 - Mar 2017 · 3 bln<br>
+               Membuat Desain Jaringan Komputer berskala kecil maupun besar, Memastikan jaringan komputer berjalan dengan baik, melakukan pemeliharaan jaringan secara rutin, dan menyelesaikan masalah pada jaringan komputer.
+             </p>
+      </div>
+    </section>
+    <section id="edu" class="about sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main">Formal Education</span>
+          <span class="heading-sec__sub">
+            Jangan pernah berhenti untuk <B>Belajar</B> atau anda sudah siap ditinggalkan
+          </span>
+        </h2>
+        <div>
+             <p class="about__content-details-para1">
+               <strong>STMIK AMIK Bandung</strong> | 2020 - Saat ini<br>
+               S1 Teknik Informatika
+             <br>
+              <p class="about__content-details-para1">
+              <strong>Freelance - Network Engineer</strong> | 2016 - 2019<br>
+              Teknik Komputer Jaringan
+            </p>
+            <br>
+      </div>
+    </section>
     <section id="projects" class="projects sec-pad">
       <div class="main-container">
         <h2 class="heading heading-sec heading-sec__mb-bg">
           <span class="heading-sec__main">Projects</span>
           <span class="heading-sec__sub">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-            tempora explicabo quae quod deserunt eius sapiente
+            Pengalaman adalah <strong>Guru</strong> terbaik, jadi banyak-banyaklah mencari pengalaman
           </span>
         </h2>
 

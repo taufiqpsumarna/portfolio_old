@@ -524,8 +524,8 @@ textarea {
     .header__logo-container:hover {
       color: #0062b9; }
   .header__logo-img-cont {
-    width: 5rem;
-    height: 5rem;
+    width: 6rem;
+    height:6rem;
     border-radius: 50px;
     overflow: hidden;
     margin-right: 1.5rem;
@@ -552,7 +552,7 @@ textarea {
       .header__links {
         display: none; } }
   .header__link {
-    padding: 2.2rem 3rem;
+    padding: 2rem 2rem;
     display: inline-block;
     font-size: 1.6rem;
     color: #333;

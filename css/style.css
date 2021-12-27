@@ -271,12 +271,27 @@ textarea {
       max-width: 60rem;
       line-height: 1.7;
       margin-bottom: 1rem; }
-      .about__content-details-para1 {
-      font-size: 1.8rem;
+      .about__content-details-para-title {
+      font-size: 2rem;
       color: grey;
       max-width: 100rem;
-      line-height: 1.7;
-      margin-bottom: 1rem; }
+      line-height: 1.8;
+      margin-bottom: 0.5rem; 
+    }
+      .about__content-details-para-description {
+        font-size: 1.8rem;
+        color: grey;
+        max-width: 100rem;
+        line-height: 1.6;
+        margin-bottom: 2rem; 
+      }
+      .about__content-details-para-sub {
+        font-size: 3rem;
+        color: rgb(70, 70, 70);
+        max-width: 100rem;
+        line-height: 1.5;
+        margin-bottom: 1rem; 
+      }
       .about__content-details-para--hl {
         font-weight: 700;
         margin: 0 3px; }

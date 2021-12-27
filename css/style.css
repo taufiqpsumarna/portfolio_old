@@ -165,10 +165,10 @@ textarea {
     padding: calc(1.5rem - 2px) calc(5rem - 2px); }
 
 .sec-pad {
-  padding: 12rem 0; }
+  padding: 8rem 0; }
   @media only screen and (max-width: 56.25em) {
     .sec-pad {
-      padding: 8rem 0; } }
+      padding: 5rem 0; } }
 
 .text-primary {
   color: #fff;
@@ -253,7 +253,7 @@ textarea {
   .about__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 10rem; }
+    grid-gap: 8rem; }
     @media only screen and (max-width: 56.25em) {
       .about__content {
         grid-template-columns: 1fr;
